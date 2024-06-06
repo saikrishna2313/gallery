@@ -1,9 +1,9 @@
-/* eslint-disable camelcase */
+
 import { clerkClient } from "@clerk/nextjs";
 import { headers } from "next/headers";
 import { NextResponse } from "next/server";
 import { Webhook } from "svix";
-import { createUser, deleteUser, updateUser } from "../../../Actions/UserAction";
+import { createUser, deleteUser, updateUser } from "../../../../Actions/UserAction";
 
 
 
