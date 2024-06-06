@@ -2,7 +2,7 @@
 
 import { revalidatePath } from "next/cache";
 import connectDB from "../Mongo/mongo";
-import User from "../app/models/user";
+import User from "../app/models/UserModel";
 
 // CREATE
 export async function createUser(user) {
