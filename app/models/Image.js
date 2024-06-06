@@ -1,4 +1,5 @@
 import { Schema, model, models } from "mongoose";
+import { type } from "os";
 
 
 
@@ -9,6 +10,8 @@ const ImageSchema = new Schema({
   secureURL: { type: String, required: true },
   width: { type: Number },
   height: { type: Number },
+  iwidth: { type: Number },
+  iheight: { type: Number },
   config: { type: Object },
   transformationUrl: { type: String },
   aspectRatio: { type: String },
@@ -16,7 +19,8 @@ const ImageSchema = new Schema({
   prompt: { type: String },
   author: { type: Schema.Types.ObjectId, ref: 'User' },
   createdAt: { type: Date, default: Date.now },
-  updatedAt: { type: Date, default: Date.now }
+  updatedAt: { type: Date, default: Date.now },
+  afterURL:{type:String}
 });
 
 const Image = models?.Image || model('Image', ImageSchema);

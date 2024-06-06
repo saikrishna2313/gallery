@@ -175,8 +175,8 @@ export const navLinks = [
       height: 1334,
     },
     "9:16": {
-      aspectRatio: "9:16",
-      label: "Phone Portrait (9:16)",
+      aspectRatio: "",
+      label: "",
       width: 1000,
       height: 1778,
     },
