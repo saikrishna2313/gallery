@@ -1,7 +1,7 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
-import connectDB from "../Mongo/mongo";
+import connectDB from "../../Mongo/mongo";
 import User from '../models/UserModel'
 
 // CREATE
