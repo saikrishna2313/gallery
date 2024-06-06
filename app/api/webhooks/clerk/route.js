@@ -3,8 +3,8 @@ import { clerkClient } from "@clerk/nextjs";
 import { headers } from "next/headers";
 import { NextResponse } from "next/server";
 import { Webhook } from "svix";
-import { createUser, updateUser, } from "../../../../actions/userAction";
-import { deleteUser } from "../../../../action/userAction";
+import { createUser, updateUser, } from "../../../actions/userAction";
+import { deleteUser } from "../../../actions/userAction";
 
 
 
